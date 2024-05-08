@@ -123,35 +123,65 @@
                 </div>
                 <div class="col-md-6">
                     <div class="wow fadeInUp" data-wow-delay="0.2s">
-                        <p class="mb-4"> <a href="https://queenenikoye.com/contact-form"></a></p>
-                        <form>
-                            <div class="row g-3">
+                        <p class="mb-4"> <a href=""></a></p>
+                        <form id="form">
+                            <div class="row g-3 field">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Nome">
-                                        <label for="name">Nom</label>
+                                        <input type="text"  name="from_name" class="form-control" id="from_name" placeholder="Nome">
+                                        <label for="from_name">Nom</label>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6 field">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Email">
-                                        <label for="email"> Email</label>
+                                        <input type="text" name="email_id" class="form-control" id="email_id" placeholder="Email">
+                                        <label for="email_id"> Email</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="subject" placeholder="Sujet">
-                                        <label for="subject">Sujet</label>
+                                    <div class="form-floating field">
+                                        <input type="text"name="tel_id" class="form-control" id="telephone_id" placeholder="Telephone">
+                                        <label for="tel_id">Telephone</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                    <div class="form-floating field">
+                                        <textarea class="form-control"  name="message" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
                                         <label for="message">Message</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Envoyer</button>
+                                    <button class="btn btn-primary w-100 py-3" id="button" type="submit" value="Send Email">Envoyer</button>
+                                    
+                            <script type="text/javascript"
+                            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+                          
+                          <script type="text/javascript">
+                            emailjs.init('dZsWSl_llCgVFKMp0')
+                          </script>
+ 
+              <script>
+                const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Envoi en cours...';
+
+   const serviceID = 'service_vpdxis6';
+   const templateID = 'template_2t8v6j9';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Soumettre';
+      alert('Votre message a été envoyé avec succés!');
+    }, (err) => {
+      btn.value = 'Soumettre';
+      alert(JSON.stringify(err));
+    });
+});
+              </script>
                                 </div>
                             </div>
                         </form>
