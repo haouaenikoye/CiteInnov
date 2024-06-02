@@ -35,9 +35,12 @@
 }
 
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 5e24cf38314ca3fa258232c7fa59b440c16c9cc0
 /*** Button ***/
 .btn {
     font-weight: 500;
@@ -101,13 +104,17 @@
 .navbar-light .navbar-nav .nav-link.active {
     color: #f15c29;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5e24cf38314ca3fa258232c7fa59b440c16c9cc0
 .truncate {
     text-align: justify;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     /* Ajoutez ici la largeur maximale que vous souhaitez pour le paragraphe */
+<<<<<<< HEAD
     max-width: 200px;
     /* Par exemple */
 }
@@ -115,11 +122,18 @@
 .modernWay {
     font-weight: bold;
     color: #0B2154;
+=======
+    max-width: 200px; /* Par exemple */
+}
+
+.modernWay {
+>>>>>>> 5e24cf38314ca3fa258232c7fa59b440c16c9cc0
     text-align: justify;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 4;
+<<<<<<< HEAD
     line-clamp: 4;
     -webkit-box-orient: vertical;
 }
@@ -129,10 +143,20 @@
 }
 
 .obtenir-devis {
+=======
+            line-clamp: 4; 
+    -webkit-box-orient: vertical;
+ }
+.logo-cite{
+    width:  180px;
+}
+.obtenir-devis{
+>>>>>>> 5e24cf38314ca3fa258232c7fa59b440c16c9cc0
     background-color: #2aade6;
     color: white;
     border-radius: 4vw 0 0 0;
 }
+<<<<<<< HEAD
 
 .obtenir-devis:hover {
     color: #ffe0a6d6;
@@ -140,10 +164,18 @@
 }
 
 .contact-form {
+=======
+.obtenir-devis:hover{
+    color: #ffe0a6d6;
+    
+}
+.contact-form{
+>>>>>>> 5e24cf38314ca3fa258232c7fa59b440c16c9cc0
     background-color: #2aade6;
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     border-radius: 0 10px 10px 0;
 }
+<<<<<<< HEAD
 
 .reserver-btn {
     background-color: #f15c29;
@@ -220,6 +252,59 @@
 
 @media (max-width: 991.98px) {
     .navbar-light .navbar-nav .nav-link {
+=======
+.reserver-btn{
+    background-color: #f15c29;
+    color: white;
+}
+.icone-nav{
+    color: #f15c29;
+}
+.text-nav{
+    color: #0f749f;
+}
+.topbar{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px ;
+    border-bottom: 0.1px solid rgba(226, 224, 224, 0.599);
+}
+.cite-img{
+   width: 100% ;
+}
+.lire-plus{
+    background-color: #f15c29;
+    color: #fff;
+    border-radius: 0 20px 20px 0;  
+} 
+.lire-plus:hover{
+    background-color: #f15b29d0;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px; 
+} 
+.text-orange{
+   color: #f15c29;
+}
+.text-blue{
+    color: #0f749f;
+ }
+ .card_services{
+    background-image: linear-gradient(to top, #2aaee655 0%, #fff 100%);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    overflow: hidden !important;
+ }
+ .card_services-shadow{
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+ }
+.btn-footer{
+    background-color:  #f15c29;
+    color: #fff;
+    border-radius: 0px 10px 10px 0px;
+}
+.btn-avion{
+    background-color:  #f15c29;
+    color: #fff;
+}
+@media (max-width: 991.98px) {
+    .navbar-light .navbar-nav .nav-link  {
+>>>>>>> 5e24cf38314ca3fa258232c7fa59b440c16c9cc0
         margin-right: 0;
         padding: 10px 0;
     }
@@ -262,10 +347,16 @@
         opacity: 1;
     }
 }
+<<<<<<< HEAD
 
 @media (max-width: 375px) {
     .logo-cite {
         width: 170px;
+=======
+@media (max-width: 375px) {
+    .logo-cite{
+        width:  170px;
+>>>>>>> 5e24cf38314ca3fa258232c7fa59b440c16c9cc0
     }
 }
 
@@ -278,7 +369,11 @@
     bottom: 0;
     background: rgba(0, 0, 0, .5);
     z-index: 1;
+<<<<<<< HEAD
 }
+=======
+} 
+>>>>>>> 5e24cf38314ca3fa258232c7fa59b440c16c9cc0
 
 .carousel-control-prev,
 .carousel-control-next {
@@ -296,7 +391,11 @@
         position: relative;
         min-height: 450px;
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 5e24cf38314ca3fa258232c7fa59b440c16c9cc0
     #header-carousel .carousel-item img {
         position: absolute;
         width: 100%;
@@ -315,7 +414,11 @@
     background: rgba(0, 0, 0, .7);
 }
 
+<<<<<<< HEAD
 .breadcrumb-item+.breadcrumb-item::before {
+=======
+.breadcrumb-item + .breadcrumb-item::before {
+>>>>>>> 5e24cf38314ca3fa258232c7fa59b440c16c9cc0
     color: var(--light);
 }
 
@@ -333,17 +436,27 @@
 .service .nav .nav-link {
     background: #fff;
     box-shadow: rgba(0, 0, 0, 0.279) 0px 25px 20px -20px;
+<<<<<<< HEAD
     border-radius: 0px 0px 20px 20px;
     transition: .5s;
 }
 
+=======
+    border-radius: 0px 0px 20px 20px ;
+    transition: .5s;
+}
+>>>>>>> 5e24cf38314ca3fa258232c7fa59b440c16c9cc0
 .service .nav .nav-link:hover {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 
 }
 
 .service .nav .nav-link.active {
+<<<<<<< HEAD
     background: var(--orange);
+=======
+    background: var( --orange);
+>>>>>>> 5e24cf38314ca3fa258232c7fa59b440c16c9cc0
 }
 
 .service .nav .nav-link.active h4 {
@@ -450,7 +563,11 @@
 
 /*** Footer ***/
 .footer {
+<<<<<<< HEAD
     background: linear-gradient(#0f749f, #0f749f);
+=======
+    background: linear-gradient(#0f749f,#0f749f);
+>>>>>>> 5e24cf38314ca3fa258232c7fa59b440c16c9cc0
     background-size: cover;
 }
 
